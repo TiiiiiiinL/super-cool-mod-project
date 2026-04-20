@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "super-cool-mod",
+	"version": "${version}",
+	"name": "Super Cool Mod",
+	"description": "Cool mod, få se va vi hitta på",
+	"authors": [
+		"Tina n Isabelle!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/TiiiiiiinL/super-cool-mod.git"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/super-cool-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tinaisabelle.supercoolmod.SuperCoolMod"
+		],
+		"fabric-datagen": [
+			"net.tinaisabelle.supercoolmod.SuperCoolModDataGenerator"
+		],
+        "client": [
+            "net.tinaisabelle.supercoolmod.SuperCoolModClient"
+        ]
+	},
+	"mixins": [
+		"super-cool-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
