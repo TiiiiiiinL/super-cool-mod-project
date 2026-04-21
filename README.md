@@ -1,11 +1,5 @@
 # Super Cool Mod
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-
-
 ## Planning
 Tanke med denna mod är att den ska läga till olika crops och man ska kunna göra nya recept med det
 Lite random ideer som kan eller kanske inte används från mig 
@@ -25,4 +19,10 @@ Så tanke är typ vi kan jobba på olika blocks o crops så det skulle vara najs
 ## TODO
 - [ ] viktigt att man lägger till png till vår spel items så den inte är en lysande random block. Har inte riktigt checkat vad för webb eller hur man fixa men lägg till länken t det här om du hittar.
 - [ ] kolla på [yt länken här](https://www.youtube.com/playlist?list=PLKGarocXCE1H_HxOYihQMq0mlpqiUJj4L) för tutorial till grejer
+
+
+
+## Setup
+For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+
 
