@@ -11,6 +11,7 @@ import net.tinaisabelle.supercoolmod.SuperCoolMod;
 public class ModItems {
 
     public static final Item RAW_RICE = registerItem("raw_rice", new Item(new Item.Settings()));
+    public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings()));
 
 
     /** det här e en helper metod för att registrera items
@@ -29,6 +30,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(RAW_RICE);
+            fabricItemGroupEntries.add(COOKED_RICE);
         });
     }
 }
