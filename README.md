@@ -8,11 +8,19 @@ crops (det skulle dessutom vara coolt om man bara kan harvesta vissa planto med 
 - [ ] Ris 
 - [ ] Tomater
 - [ ] Sötpotatis
-- [ ] ...
+- [ ] cucumber
+- [ ] 
 
 block
 - [ ] Riskokare (skulle vara cool :3 like jag vill inte cooka ris i ungen)
+- [ ] shushi maker block (känns också skumt att göra i ugn tihi)
 - [ ] ...
+
+mat
+- [ ] ramen
+- [ ] baozi
+- [ ] sushi
+
 
 Så tanke är typ vi kan jobba på olika blocks o crops så det skulle vara najs om du kan skriva ner några du vill göra så det inte krockar eller något!
 
