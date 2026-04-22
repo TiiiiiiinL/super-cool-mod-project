@@ -4,22 +4,27 @@
 Tanke med denna mod är att den ska läga till olika crops och man ska kunna göra nya recept med det
 Lite random ideer som kan eller kanske inte används från mig 
 
+Jag la till typ maaaassa idéer vi behöver inte göra alla tehe bara ville skriva ned så man kan välja sen tihihih
+
 crops (det skulle dessutom vara coolt om man bara kan harvesta vissa planto med en sickle)
 - [ ] Ris 
 - [ ] Tomater
 - [ ] Sötpotatis
 - [ ] cucumber
-- [ ] 
+- [ ] tea leaves
 
 block
 - [ ] Riskokare (skulle vara cool :3 like jag vill inte cooka ris i ungen)
 - [ ] shushi maker block (känns också skumt att göra i ugn tihi)
-- [ ] ...
+- [ ] drink maker/matcha maker/tea maker
 
 mat
 - [ ] ramen
 - [ ] baozi
 - [ ] sushi
+
+dryck
+- [ ] matcha/té
 
 
 Så tanke är typ vi kan jobba på olika blocks o crops så det skulle vara najs om du kan skriva ner några du vill göra så det inte krockar eller något!
