@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
     public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
+    public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER)));
+
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -37,6 +39,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(TOMATO);
             fabricItemGroupEntries.add(COOKED_RICE);
+            fabricItemGroupEntries.add(CUCUMBER);
 
         });
     }

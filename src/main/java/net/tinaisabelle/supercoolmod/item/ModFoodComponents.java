@@ -13,4 +13,8 @@ public class ModFoodComponents {
     public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().nutrition(5).
             //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
                     build();
+
+    public static final FoodComponent CUCUMBER = new FoodComponent.Builder().nutrition(1).
+        //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                build();
 }
