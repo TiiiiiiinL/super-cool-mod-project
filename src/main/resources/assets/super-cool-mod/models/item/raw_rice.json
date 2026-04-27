@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "supercoolmod:item/raw_rice"
+    "layer0": "super-cool-mod:item/raw_rice"
   }
 }
