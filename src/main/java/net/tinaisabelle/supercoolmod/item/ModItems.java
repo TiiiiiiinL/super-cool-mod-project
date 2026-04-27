@@ -20,7 +20,9 @@ public class ModItems {
     public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
     public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
     public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER)));
-
+    public static final Item RAMEN = registerItem("ramen", new Item(new Item.Settings().food(ModFoodComponents.RAMEN)));
+    public static final Item BAOZI = registerItem("baozi", new Item(new Item.Settings().food(ModFoodComponents.BAOZI)));
+    public static final Item SUSHI = registerItem("sushi", new Item(new Item.Settings().food(ModFoodComponents.SUSHI)));
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -45,6 +47,9 @@ public class ModItems {
             fabricItemGroupEntries.add(TOMATO);
             fabricItemGroupEntries.add(COOKED_RICE);
             fabricItemGroupEntries.add(CUCUMBER);
+            fabricItemGroupEntries.add(RAMEN);
+            fabricItemGroupEntries.add(BAOZI);
+            fabricItemGroupEntries.add(SUSHI);
 
         });
     }
