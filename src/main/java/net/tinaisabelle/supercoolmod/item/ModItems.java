@@ -22,7 +22,7 @@ public class ModItems {
     public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER)));
     public static final Item RAMEN = registerItem("ramen", new Item(new Item.Settings().food(ModFoodComponents.RAMEN)));
     public static final Item BAOZI = registerItem("baozi", new Item(new Item.Settings().food(ModFoodComponents.BAOZI)));
-    public static final Item SUSHI = registerItem("sushi", new Item(new Item.Settings().food(ModFoodComponents.SUSHI)));
+    public static final Item MAKI_ROLL = registerItem("maki-roll", new Item(new Item.Settings().food(ModFoodComponents.MAKI_ROLL)));
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -49,7 +49,7 @@ public class ModItems {
             fabricItemGroupEntries.add(CUCUMBER);
             fabricItemGroupEntries.add(RAMEN);
             fabricItemGroupEntries.add(BAOZI);
-            fabricItemGroupEntries.add(SUSHI);
+            fabricItemGroupEntries.add(MAKI_ROLL);
 
         });
     }

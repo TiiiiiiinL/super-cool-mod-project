@@ -26,7 +26,7 @@ public class ModFoodComponents {
             //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
                     build();
 
-    public static final FoodComponent SUSHI = new FoodComponent.Builder().nutrition(1).
+    public static final FoodComponent MAKI_ROLL = new FoodComponent.Builder().nutrition(1).
             //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
                     build();
 }
