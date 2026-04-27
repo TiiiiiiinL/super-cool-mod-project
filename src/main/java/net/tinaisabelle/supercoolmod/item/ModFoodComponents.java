@@ -17,4 +17,16 @@ public class ModFoodComponents {
     public static final FoodComponent CUCUMBER = new FoodComponent.Builder().nutrition(1).
         //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
                 build();
+
+    public static final FoodComponent RAMEN = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
+
+    public static final FoodComponent BAOZI = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
+
+    public static final FoodComponent SUSHI = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
 }
