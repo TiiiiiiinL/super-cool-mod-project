@@ -12,6 +12,8 @@ public class ModItems {
 
     //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
     public static final Item RAW_RICE = registerItem("raw_rice", new Item(new Item.Settings()));
+    public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
+
 
     public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
     public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
@@ -32,6 +34,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(RAW_RICE);
+            fabricItemGroupEntries.add(TEA_LEAVES);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
