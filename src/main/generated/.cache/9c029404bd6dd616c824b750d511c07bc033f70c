@@ -1,4 +1,4 @@
-// 1.21	2026-04-27T23:10:18.722846	Super Cool Mod/Model Definitions
+// 1.21	2026-04-28T14:27:43.9125035	Super Cool Mod/Model Definitions
 d5464a22601ab0aa0efee2787d43686498a39a61 assets\super-cool-mod\models\block\rice_crop_stage2.json
 7a05ea3d8f92d076297886e19cf14a7f9bd3b46f assets\super-cool-mod\models\block\rice_crop_stage6.json
 7d69adf12f6a3d7c10fa470d19bc0f13cabc2b7d assets\super-cool-mod\models\block\rice_crop_stage5.json
@@ -7,6 +7,7 @@ f13ef6ce1474d2132a2b3cdbc29584fb5cb90836 assets\super-cool-mod\blockstates\rice_
 75dafc0ee09893c2c10c7e9c4526f3583e4e566c assets\super-cool-mod\models\block\rice_crop_stage3.json
 f644ca15c1897202f0b739444da04048379b54b5 assets\super-cool-mod\models\block\rice_crop_stage1.json
 87a1859a8985d6ae0d7f58a9b25ce1be8e023253 assets\super-cool-mod\models\block\rice_crop_stage4.json
+71812459d61274e8ba6eb1f623df5197967bc355 assets\super-cool-mod\models\item\cilantro.json
 39aacd42c82eafd8ced78b472e4b106d2149148b assets\super-cool-mod\models\item\rice_seeds.json
 d034f8b6cbe0d55ede71fb7d1b8f72eb991b9b43 assets\super-cool-mod\models\item\tomato.json
 0972c257a95040ba252d2fe47d21a5d83abb6d44 assets\super-cool-mod\models\item\cooked_rice.json

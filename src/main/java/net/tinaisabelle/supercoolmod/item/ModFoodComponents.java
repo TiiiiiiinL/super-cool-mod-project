@@ -12,7 +12,7 @@ public class ModFoodComponents {
 
     public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().nutrition(5).build();
 
-    public static final FoodComponent CILANTRO = new FoodComponent.Builder().nutrition(-2).
+    public static final FoodComponent CILANTRO = new FoodComponent.Builder().nutrition(0).
             statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,100), 0.7f).
             statusEffect(new StatusEffectInstance(StatusEffects.POISON,50), 0.3f).build();
 
