@@ -13,13 +13,21 @@ import net.tinaisabelle.supercoolmod.block.ModBlocks;
 public class ModItems {
 
     //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
-    public static final Item RAW_RICE = registerItem("raw_rice", new Item(new Item.Settings()));
-    public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
-    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
-    public static final Item CILANTRO = registerItem("cilantro", new Item(new Item.Settings().food(ModFoodComponents.CILANTRO)));
+    public static final Item RAW_RICE = registerItem("raw_rice",
+            new Item(new Item.Settings()));
+
+    public static final Item COOKED_RICE = registerItem("cooked_rice",
+            new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
 
 
-    public static final Item RICE_SEEDS = registerItem("rice_seeds", new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
+    public static final Item CILANTRO = registerItem("cilantro",
+            new Item(new Item.Settings().food(ModFoodComponents.CILANTRO)));
+
+    public static final Item TOMATO = registerItem("tomato",
+            new AliasedBlockItem(ModBlocks.TOMATO_BUSH, new Item.Settings().food(ModFoodComponents.TOMATO)));
+
+    public static final Item RICE_SEEDS = registerItem("rice_seeds",
+            new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
 
 
     /** det här e en helper metod för att registrera items

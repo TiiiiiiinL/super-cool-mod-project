@@ -2,6 +2,7 @@ package net.tinaisabelle.supercoolmod.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -12,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
 import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
+import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
 
 public class ModBlocks {
     //temp för block, kolla #3 från 4.40m
@@ -19,8 +21,22 @@ public class ModBlocks {
         //new Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
 
     public static final Block RICE_CROP = registerBlockWithOutBlockItem("rice_crop",
-            new RiceCropBlock(AbstractBlock.Settings.create().noCollision().mapColor(MapColor.DARK_GREEN).
-                    ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
+            new RiceCropBlock(AbstractBlock.Settings.create().
+                    noCollision().
+                    mapColor(MapColor.DARK_GREEN).
+                    ticksRandomly().
+                    breakInstantly().
+                    sounds(BlockSoundGroup.CROP).
+                    pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+
+    public static final Block TOMATO_BUSH = registerBlockWithOutBlockItem("tomato_bush",
+            new TomatoBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
+            )
+    );
+
 
     private static Block registerBlockWithOutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(SuperCoolMod.MOD_ID, name), block);

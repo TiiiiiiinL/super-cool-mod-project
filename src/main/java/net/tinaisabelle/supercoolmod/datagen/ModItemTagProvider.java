@@ -1,9 +1,8 @@
-package net.tinaisabelle.supercoolmod.block.datagen;
+package net.tinaisabelle.supercoolmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 

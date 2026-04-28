@@ -2,10 +2,10 @@ package net.tinaisabelle.supercoolmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.tinaisabelle.supercoolmod.block.datagen.ModBlockTagProvider;
-import net.tinaisabelle.supercoolmod.block.datagen.ModItemTagProvider;
-import net.tinaisabelle.supercoolmod.block.datagen.ModLootTableProvider;
-import net.tinaisabelle.supercoolmod.block.datagen.ModModelProvider;
+import net.tinaisabelle.supercoolmod.datagen.ModBlockTagProvider;
+import net.tinaisabelle.supercoolmod.datagen.ModItemTagProvider;
+import net.tinaisabelle.supercoolmod.datagen.ModLootTableProvider;
+import net.tinaisabelle.supercoolmod.datagen.ModModelProvider;
 
 public class SuperCoolModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
