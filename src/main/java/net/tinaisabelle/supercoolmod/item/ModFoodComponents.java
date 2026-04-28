@@ -10,7 +10,10 @@ public class ModFoodComponents {
             //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
             build();
 
-    public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().nutrition(5).
-            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
-                    build();
+    public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().nutrition(5).build();
+
+    public static final FoodComponent CILANTRO = new FoodComponent.Builder().nutrition(-2).
+            statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,100), 0.7f).
+            statusEffect(new StatusEffectInstance(StatusEffects.POISON,50), 0.3f).build();
+
 }
