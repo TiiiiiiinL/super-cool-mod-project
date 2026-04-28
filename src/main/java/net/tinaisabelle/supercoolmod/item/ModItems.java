@@ -14,7 +14,8 @@ public class ModItems {
     public static final Item RAW_RICE = registerItem("raw_rice", new Item(new Item.Settings()));
     public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
 
-
+    public static final Item RAW_JADE_ORE = registerItem("raw_jade_ore", new Item(new Item.Settings()));
+    public static final Item JADE_ORE = registerItem("jade_ore", new Item(new Item.Settings()));
 
 
     public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
@@ -42,6 +43,9 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(RAW_RICE);
             fabricItemGroupEntries.add(TEA_LEAVES);
+            fabricItemGroupEntries.add(RAW_JADE_ORE);
+            fabricItemGroupEntries.add(JADE_ORE);
+
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
@@ -52,7 +56,6 @@ public class ModItems {
             fabricItemGroupEntries.add(BAOZI);
             fabricItemGroupEntries.add(MAKI_ROLL);
             fabricItemGroupEntries.add(MATCHA);
-
         });
     }
 }
