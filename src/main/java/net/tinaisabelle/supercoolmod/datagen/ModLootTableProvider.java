@@ -1,0 +1,56 @@
+package net.tinaisabelle.supercoolmod.datagen;
+
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.RegistryWrapper;
+import net.tinaisabelle.supercoolmod.block.ModBlocks;
+import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
+import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
+import net.tinaisabelle.supercoolmod.item.ModItems;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModLootTableProvider extends FabricBlockLootTableProvider {
+    public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
+    }
+
+    @Override
+    public void generate() {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        //addDrop(ModBlocks.NAME);
+        //ores lite olika
+
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(RiceCropBlock.AGE,RiceCropBlock.MAX_AGE));
+        this.addDrop(ModBlocks.RICE_CROP, this.cropDrops(ModBlocks.RICE_CROP, ModItems.RAW_RICE, ModItems.RICE_SEEDS, builder2));
+
+        this.addDrop(ModBlocks.TOMATO_BUSH,
+                block -> this.applyExplosionDecay(
+                        block, LootTable.builder().pool(LootPool.builder().conditionally(
+                                        BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_BUSH).properties(StatePredicate.Builder.create().
+                                                exactMatch(TomatoBushBlock.AGE, 3)))
+                                                .with(ItemEntry.builder(ModItems.TOMATO))
+                                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 3.0F)))
+                                                .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
+                ).
+                                pool(LootPool.builder().conditionally(
+                                        BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_BUSH).properties(StatePredicate.Builder.create().exactMatch(TomatoBushBlock.AGE, 2))
+                                ).with(ItemEntry.builder(ModItems.TOMATO))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
+                                .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))))));
+
+
+    }
+}

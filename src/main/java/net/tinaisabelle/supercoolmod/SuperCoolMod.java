@@ -2,6 +2,7 @@ package net.tinaisabelle.supercoolmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,13 @@ public class SuperCoolMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
         ModBlocks.registerModBlocks();
-	}
+
+        //komposting grejer
+        CompostingChanceRegistry.INSTANCE.add(ModItems.RAW_RICE,0.5f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.RICE_SEEDS,0.25f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO,0.25f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.CILANTRO,0.25f);
+
+
+    }
 }
