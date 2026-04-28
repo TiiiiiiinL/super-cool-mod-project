@@ -18,8 +18,12 @@ public class ModBlocks {
             //new Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
 
     public static final Block JADE_BLOCK = registerBlock("jade_block",
-        new Block(AbstractBlock.Settings.create().strength(4)
+            new Block(AbstractBlock.Settings.create().strength(4f)
                 .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block JADE_ORE_BLOCK= registerBlock("jade_ore_block",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -39,6 +43,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.JADE_BLOCK);
+            entries.add(ModBlocks.JADE_ORE_BLOCK);
         });
     }
 }
