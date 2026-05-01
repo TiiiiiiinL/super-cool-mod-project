@@ -2,6 +2,7 @@ package net.tinaisabelle.supercoolmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.tinaisabelle.supercoolmod.datagen.*;
 import net.tinaisabelle.supercoolmod.datagen.ModBlockTagProvider;
 import net.tinaisabelle.supercoolmod.datagen.ModItemTagProvider;
 import net.tinaisabelle.supercoolmod.datagen.ModLootTableProvider;
@@ -15,5 +16,6 @@ public class SuperCoolModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }
