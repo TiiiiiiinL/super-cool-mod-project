@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
+import net.tinaisabelle.supercoolmod.item.custom.SickleItem;
 
 public class ModItems {
 
@@ -29,6 +30,28 @@ public class ModItems {
     public static final Item RICE_SEEDS = registerItem("rice_seeds",
             new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
 
+    public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
+            new SickleItem(new Item.Settings().maxDamage(32))); //maxdamage==gånger kan användas
+
+    /*
+    public static final Item STONE_SICKLE = registerItem("stone_sickle",
+            new SickleItem(new Item.Settings().maxDamage(65)));
+
+    public static final Item COPPER_SICKLE = registerItem("copper_sickle",
+            new SickleItem(new Item.Settings().maxDamage(130)));
+
+    public static final Item IRON_SICKLE = registerItem("iron_sickle",
+            new SickleItem(new Item.Settings().maxDamage(250)));
+
+    public static final Item GOLDEN_SICKLE = registerItem("golden_sickle",
+            new SickleItem(new Item.Settings().maxDamage(33)));
+
+    public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle",
+            new SickleItem(new Item.Settings().maxDamage(1600)));
+
+    public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
+            new SickleItem(new Item.Settings().maxDamage(2100)));
+    */
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -54,6 +77,10 @@ public class ModItems {
             fabricItemGroupEntries.add(RAW_RICE);
             fabricItemGroupEntries.add(RICE_SEEDS);
             fabricItemGroupEntries.add(CILANTRO);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(WOODEN_SICKLE);
         });
     }
 }
