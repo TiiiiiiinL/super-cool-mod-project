@@ -32,7 +32,6 @@ public class ModItems {
     public static final Item COOKED_RICE = registerItem("cooked_rice",
             new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
 
-
     public static final Item CILANTRO = registerItem("cilantro",
             new Item(new Item.Settings().food(ModFoodComponents.CILANTRO)));
 
@@ -58,7 +57,6 @@ public class ModItems {
         SuperCoolMod.LOGGER.info("Registering ModItems");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            
             fabricItemGroupEntries.add(TEA_LEAVES);
             fabricItemGroupEntries.add(RAW_JADE_ORE);
             fabricItemGroupEntries.add(JADE_ORE);
