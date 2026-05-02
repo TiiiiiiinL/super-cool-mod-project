@@ -13,6 +13,19 @@ import net.tinaisabelle.supercoolmod.block.ModBlocks;
 public class ModItems {
 
     //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
+    
+    public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
+
+
+    public static final Item RAW_JADE_ORE = registerItem("raw_jade_ore", new Item(new Item.Settings()));
+    public static final Item JADE_ORE = registerItem("jade_ore", new Item(new Item.Settings()));
+
+    public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER)));
+    public static final Item RAMEN = registerItem("ramen", new Item(new Item.Settings().food(ModFoodComponents.RAMEN)));
+    public static final Item BAOZI = registerItem("baozi", new Item(new Item.Settings().food(ModFoodComponents.BAOZI)));
+    public static final Item MAKI_ROLL = registerItem("maki_roll", new Item(new Item.Settings().food(ModFoodComponents.MAKI_ROLL)));
+    public static final Item MATCHA = registerItem("matcha", new Item(new Item.Settings().food(ModFoodComponents.MATCHA)));
+    
     public static final Item RAW_RICE = registerItem("raw_rice",
             new Item(new Item.Settings()));
 
@@ -45,12 +58,21 @@ public class ModItems {
         SuperCoolMod.LOGGER.info("Registering ModItems");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+            
+            fabricItemGroupEntries.add(TEA_LEAVES);
+            fabricItemGroupEntries.add(RAW_JADE_ORE);
+            fabricItemGroupEntries.add(JADE_ORE);
 
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(TOMATO);
             fabricItemGroupEntries.add(COOKED_RICE);
+            fabricItemGroupEntries.add(CUCUMBER);
+            fabricItemGroupEntries.add(RAMEN);
+            fabricItemGroupEntries.add(BAOZI);
+            fabricItemGroupEntries.add(MAKI_ROLL);
+            fabricItemGroupEntries.add(MATCHA);
             fabricItemGroupEntries.add(RAW_RICE);
             fabricItemGroupEntries.add(RICE_SEEDS);
             fabricItemGroupEntries.add(CILANTRO);

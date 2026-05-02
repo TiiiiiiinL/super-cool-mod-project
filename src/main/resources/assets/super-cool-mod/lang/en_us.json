@@ -1,10 +1,25 @@
 {
+  "item.super-cool-mod.tea_leaves": "Tea leaves",
+
+  "item.super-cool-mod.raw_jade_ore": "Raw Jade Ore",
+  "item.super-cool-mod.jade_ore": "Jade ore",
+
+  "item.super-cool-mod.cucumber": "Cucumber",
+  "item.super-cool-mod.ramen": "Ramen",
+  "item.super-cool-mod.baozi": "Baozi",
+  "item.super-cool-mod.maki_roll": "Maki Roll",
+  "item.super-cool-mod.matcha": "Matcha",
+
+  "block.super-cool-mod.jade_block": "Block of jade",
+  "block.super-cool-mod.jade_ore_block": "Jade Ore",
+
+  "itemgroup.super-cool-mod.new_mod_items": "New mod Items"
+
   "item.super-cool-mod.raw_rice": "Rice",
   "item.super-cool-mod.cooked_rice": "Cooked Rice",
   "item.super-cool-mod.tomato": "Tomato",
   "item.super-cool-mod.rice_seeds": "Rice Seeds",
   "item.super-cool-mod.cilantro": "Cilantro",
-
 
   "block.super-cool-mod.rice_crop": "Rice Crop",
   "block.super-cool-mod.tomato_bush": "Tomato Bush"

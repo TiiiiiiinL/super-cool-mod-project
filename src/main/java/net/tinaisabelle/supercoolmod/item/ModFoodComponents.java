@@ -14,4 +14,23 @@ public class ModFoodComponents {
             statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,200), 0.7f).
             statusEffect(new StatusEffectInstance(StatusEffects.POISON,100), 0.3f).build();
 
+    public static final FoodComponent CUCUMBER = new FoodComponent.Builder().nutrition(1).
+        //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                build();
+
+    public static final FoodComponent RAMEN = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
+
+    public static final FoodComponent BAOZI = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
+
+    public static final FoodComponent MAKI_ROLL = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
+
+    public static final FoodComponent MATCHA = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
 }

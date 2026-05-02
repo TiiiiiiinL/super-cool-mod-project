@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
+import net.tinaisabelle.supercoolmod.item.ModItemGroups;
 import net.tinaisabelle.supercoolmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ public class SuperCoolMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
