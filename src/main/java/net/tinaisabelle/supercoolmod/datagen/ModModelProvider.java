@@ -8,6 +8,8 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 
+import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
+import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -19,6 +21,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JADE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JADE_ORE_BLOCK);
+        
+        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.TOMATO_BUSH,BlockStateModelGenerator.TintType.NOT_TINTED,
+                TomatoBushBlock.AGE, 0, 1, 2, 3);
     }
 
 
@@ -32,6 +39,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAOZI, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAKI_ROLL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MATCHA, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.COOKED_RICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_RICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED); //tomat ska vara en buske
+        itemModelGenerator.register(ModItems.CILANTRO, Models.GENERATED); //det ska också vara en buske
     }
 
 }

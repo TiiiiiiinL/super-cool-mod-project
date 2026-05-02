@@ -1,31 +1,47 @@
 package net.tinaisabelle.supercoolmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
+import net.tinaisabelle.supercoolmod.block.ModBlocks;
 
 public class ModItems {
 
     //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
-    public static final Item RAW_RICE = registerItem("raw_rice", new Item(new Item.Settings()));
+    
     public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
 
 
     public static final Item RAW_JADE_ORE = registerItem("raw_jade_ore", new Item(new Item.Settings()));
     public static final Item JADE_ORE = registerItem("jade_ore", new Item(new Item.Settings()));
 
-
-    public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
-    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
     public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER)));
     public static final Item RAMEN = registerItem("ramen", new Item(new Item.Settings().food(ModFoodComponents.RAMEN)));
     public static final Item BAOZI = registerItem("baozi", new Item(new Item.Settings().food(ModFoodComponents.BAOZI)));
     public static final Item MAKI_ROLL = registerItem("maki_roll", new Item(new Item.Settings().food(ModFoodComponents.MAKI_ROLL)));
     public static final Item MATCHA = registerItem("matcha", new Item(new Item.Settings().food(ModFoodComponents.MATCHA)));
+    
+    public static final Item RAW_RICE = registerItem("raw_rice",
+            new Item(new Item.Settings()));
+
+    public static final Item COOKED_RICE = registerItem("cooked_rice",
+            new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE)));
+
+
+    public static final Item CILANTRO = registerItem("cilantro",
+            new Item(new Item.Settings().food(ModFoodComponents.CILANTRO)));
+
+    public static final Item TOMATO = registerItem("tomato",
+            new AliasedBlockItem(ModBlocks.TOMATO_BUSH, new Item.Settings().food(ModFoodComponents.TOMATO)));
+
+    public static final Item RICE_SEEDS = registerItem("rice_seeds",
+            new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
+
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -42,7 +58,7 @@ public class ModItems {
         SuperCoolMod.LOGGER.info("Registering ModItems");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(RAW_RICE);
+            
             fabricItemGroupEntries.add(TEA_LEAVES);
             fabricItemGroupEntries.add(RAW_JADE_ORE);
             fabricItemGroupEntries.add(JADE_ORE);
@@ -57,6 +73,9 @@ public class ModItems {
             fabricItemGroupEntries.add(BAOZI);
             fabricItemGroupEntries.add(MAKI_ROLL);
             fabricItemGroupEntries.add(MATCHA);
+            fabricItemGroupEntries.add(RAW_RICE);
+            fabricItemGroupEntries.add(RICE_SEEDS);
+            fabricItemGroupEntries.add(CILANTRO);
         });
     }
 }

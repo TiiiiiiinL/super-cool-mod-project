@@ -17,6 +17,7 @@ block
 - [ ] Riskokare (skulle vara cool :3 like jag vill inte cooka ris i ungen)
 - [ ] shushi maker block (känns också skumt att göra i ugn tihi)
 - [ ] drink maker/matcha maker/tea maker
+- [ ] jade block (ore) (bara för att testa vill veta hur man gör hehe)
 
 mat
 - [ ] ramen
@@ -25,6 +26,9 @@ mat
 
 dryck
 - [ ] matcha/té
+
+ores
+- [ ] jade (bara för att testa vill veta hur man gör hehe)
 
 
 Så tanke är typ vi kan jobba på olika blocks o crops så det skulle vara najs om du kan skriva ner några du vill göra så det inte krockar eller något!
