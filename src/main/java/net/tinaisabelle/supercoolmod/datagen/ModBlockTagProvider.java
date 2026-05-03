@@ -20,8 +20,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(ModBlocks.JADE_BLOCK)
                 .add(ModBlocks.JADE_ORE_BLOCK);
                 
-    }
-}
+
         getOrCreateTagBuilder(BlockTags.CROPS)
                 .add(ModBlocks.RICE_CROP);
     }
