@@ -59,6 +59,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
             .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
                 .properties(StatePredicate.Builder.create()
                     .exactMatch(RiceCropBlock.AGE, RiceCropBlock.MAX_AGE)))
+                .conditionally(InvertedLootCondition.builder(
+                        MatchToolLootCondition.builder(
+                                ItemPredicate.Builder.create().items(ModItems.WOODEN_SICKLE)
+                        )
+                ).build())
             .with(ItemEntry.builder(ModItems.RAW_RICE))
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(1.0F, 3.0F)))
