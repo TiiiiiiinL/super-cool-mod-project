@@ -33,4 +33,8 @@ public class ModFoodComponents {
     public static final FoodComponent MATCHA = new FoodComponent.Builder().nutrition(1).
             //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
                     build();
+
+    public static final FoodComponent NOODLES = new FoodComponent.Builder().nutrition(1).
+            //saturationModifier(0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.2f).
+                    build();
 }

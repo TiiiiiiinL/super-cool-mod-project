@@ -13,6 +13,7 @@ import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.item.ModItems;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.item.Items;
 
 
 import java.util.List;
@@ -42,12 +43,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JADE_ORE, 9)
-                .input(ModBlocks.JADE_BLOCK)
-                .criterion(hasItem(ModBlocks.JADE_BLOCK), conditionsFromItem(ModBlocks.JADE_BLOCK))
+         */
+
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.RAMEN)
+                .input(ModItems.NOODLES)
+                .input(Items.PORKCHOP)
+                .input(Items.EGG)
+                .input(Items.KELP)
+                .input(Items.BOWL)
+                .criterion(hasItem(ModItems.NOODLES), conditionsFromItem(ModItems.NOODLES))
                 .offerTo(exporter);
 
-         */
   
         List<ItemConvertible> RICE_SMOKABLE = List.of(ModItems.RAW_RICE);
 

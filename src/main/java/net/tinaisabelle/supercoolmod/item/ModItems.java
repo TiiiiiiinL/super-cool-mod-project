@@ -25,7 +25,8 @@ public class ModItems {
     public static final Item BAOZI = registerItem("baozi", new Item(new Item.Settings().food(ModFoodComponents.BAOZI)));
     public static final Item MAKI_ROLL = registerItem("maki_roll", new Item(new Item.Settings().food(ModFoodComponents.MAKI_ROLL)));
     public static final Item MATCHA = registerItem("matcha", new Item(new Item.Settings().food(ModFoodComponents.MATCHA)));
-    
+    public static final Item NOODLES = registerItem("noodles", new Item(new Item.Settings().food(ModFoodComponents.NOODLES)));
+
     public static final Item RAW_RICE = registerItem("raw_rice",
             new Item(new Item.Settings()));
 
@@ -76,6 +77,7 @@ public class ModItems {
             fabricItemGroupEntries.add(RAW_RICE);
             fabricItemGroupEntries.add(RICE_SEEDS);
             fabricItemGroupEntries.add(CILANTRO);
+            fabricItemGroupEntries.add(NOODLES);
         });
     }
 }
