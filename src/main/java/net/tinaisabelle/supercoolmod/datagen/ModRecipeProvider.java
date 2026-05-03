@@ -3,6 +3,7 @@ package net.tinaisabelle.supercoolmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -48,7 +49,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
          */
   
-         List<ItemConvertible> RICE_SMOKABLE = List.of(ModItems.RAW_RICE);
+        List<ItemConvertible> RICE_SMOKABLE = List.of(ModItems.RAW_RICE);
+
         CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ModItems.RAW_RICE), RecipeCategory.FOOD,
                 ModItems.COOKED_RICE, 0.35f, 300).offerTo(exporter, "cooked_rice_from_smoking");
 
