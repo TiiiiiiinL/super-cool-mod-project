@@ -24,13 +24,16 @@ import net.tinaisabelle.supercoolmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModLootTableProvider extends FabricBlockLootTableProvider {
+public class ModLootTableProvider extends FabricBlockLootTableProvider{
+
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.JADE_BLOCK);
+        addDrop(ModBlocks.JADE_ORE_BLOCK, oreDrops(ModBlocks.JADE_ORE_BLOCK, ModItems.RAW_JADE_ORE));
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         //addDrop(ModBlocks.NAME);
         //ores lite olika

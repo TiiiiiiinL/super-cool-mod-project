@@ -14,4 +14,18 @@ public class ModFoodComponents {
             statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,200), 0.7f).
             statusEffect(new StatusEffectInstance(StatusEffects.POISON,100), 0.3f).build();
 
+    public static final FoodComponent CUCUMBER = new FoodComponent.Builder().nutrition(1).
+                build();
+
+    public static final FoodComponent RAMEN = new FoodComponent.Builder().nutrition(1).
+                    build();
+
+    public static final FoodComponent BAOZI = new FoodComponent.Builder().nutrition(1).
+                    build();
+
+    public static final FoodComponent MAKI_ROLL = new FoodComponent.Builder().nutrition(1).
+                    build();
+
+    public static final FoodComponent MATCHA = new FoodComponent.Builder().nutrition(1).
+                    build();
 }

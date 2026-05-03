@@ -1,5 +1,6 @@
 package net.tinaisabelle.supercoolmod.block;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -7,6 +8,7 @@ import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -42,6 +44,14 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(SuperCoolMod.MOD_ID, name), block);
     }
 
+    public static final Block JADE_BLOCK = registerBlock("jade_block",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block JADE_ORE_BLOCK= registerBlock("jade_ore_block",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool()));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(SuperCoolMod.MOD_ID, name), block);
@@ -56,6 +66,11 @@ public class ModBlocks {
      * inte använd än
      */
     public static void registerModBlocks() {
-        SuperCoolMod.LOGGER.info("Registering ModBlocks");
+        SuperCoolMod.LOGGER.info("Registering ModBlocks" + SuperCoolMod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.JADE_BLOCK);
+            entries.add(ModBlocks.JADE_ORE_BLOCK);
+        });
     }
 }
