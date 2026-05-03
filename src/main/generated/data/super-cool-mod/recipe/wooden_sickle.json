@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "III",
+    " SI",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "super-cool-mod:wooden_sickle"
+  }
+}
