@@ -21,6 +21,12 @@
   "item.super-cool-mod.rice_seeds": "Rice Seeds",
   "item.super-cool-mod.cilantro": "Cilantro",
   "item.super-cool-mod.wooden_sickle": "Wooden Sickle",
+  "item.super-cool-mod.stone_sickle": "Stone Sickle",
+  "item.super-cool-mod.copper_sickle": "Copper Sickle",
+  "item.super-cool-mod.iron_sickle": "Iron Sickle",
+  "item.super-cool-mod.golden_sickle": "Golden Sickle",
+  "item.super-cool-mod.diamond_sickle": "Diamond Sickle",
+  "item.super-cool-mod.netherite_sickle": "Netherite Sickle",
 
   "block.super-cool-mod.rice_crop": "Rice Crop",
   "block.super-cool-mod.tomato_bush": "Tomato Bush"

@@ -56,7 +56,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(4.0F, 6.0F)))
         )
-
         // full utan sickle
         .pool(LootPool.builder()
             .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
@@ -71,7 +70,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(1.0F, 3.0F)))
         )
-
         //seeds alltid droppa
         .pool(LootPool.builder()
             .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
@@ -81,7 +79,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(1.0F, 2.0F)))
         )
-
         // inte full
         .pool(LootPool.builder()
             .conditionally(InvertedLootCondition.builder(

@@ -45,7 +45,7 @@ public class ModItems {
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(new Item.Settings().maxDamage(32))); //maxdamage==gånger kan användas
 
-    /*
+
     public static final Item STONE_SICKLE = registerItem("stone_sickle",
             new SickleItem(new Item.Settings().maxDamage(65)));
 
@@ -63,7 +63,7 @@ public class ModItems {
 
     public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
             new SickleItem(new Item.Settings().maxDamage(2100)));
-    */
+
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -101,6 +101,12 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(WOODEN_SICKLE);
+            fabricItemGroupEntries.add(STONE_SICKLE);
+            fabricItemGroupEntries.add(COPPER_SICKLE);
+            fabricItemGroupEntries.add(IRON_SICKLE);
+            fabricItemGroupEntries.add(GOLDEN_SICKLE);
+            fabricItemGroupEntries.add(DIAMOND_SICKLE);
+            fabricItemGroupEntries.add(NETHERITE_SICKLE);
         });
     }
 }
