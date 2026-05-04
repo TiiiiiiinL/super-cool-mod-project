@@ -42,8 +42,8 @@ public class ModModelProvider extends FabricModelProvider {
         
         itemModelGenerator.register(ModItems.COOKED_RICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_RICE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED); //tomat ska vara en buske
-        itemModelGenerator.register(ModItems.CILANTRO, Models.GENERATED); //det ska också vara en buske
+        // itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED); //tomat ska vara en buske
+        // itemModelGenerator.register(ModItems.CILANTRO, Models.GENERATED); //det ska också vara en buske
     }
 
 }
