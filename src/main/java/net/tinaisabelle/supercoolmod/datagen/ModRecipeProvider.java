@@ -52,7 +52,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
          List<ItemConvertible> RICE_SMOKABLE = List.of(ModItems.RAW_RICE);
 
          CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ModItems.RAW_RICE), RecipeCategory.FOOD,
-                ModItems.COOKED_RICE, 0.35f, 300).offerTo(exporter, "cooked_rice_from_smoking");
+                ModItems.COOKED_RICE, 0.35f, 300)
+                 .criterion(hasItem(ModItems.RAW_RICE), conditionsFromItem(ModItems.RAW_RICE))
+                 .offerTo(exporter, "cooked_rice_from_smoking");
 
     }
 }

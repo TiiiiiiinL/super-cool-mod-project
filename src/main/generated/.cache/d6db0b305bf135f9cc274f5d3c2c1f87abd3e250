@@ -1,4 +1,3 @@
-
-// 1.21	2026-05-01T14:35:33.7888363	Super Cool Mod/Tags for minecraft:block
-cb0e20f46ed1565a863e0a158e150eab2477f5ab data\minecraft\tags\block\mineable\pickaxe.json
-33ea28982731182f54fbf2e0412b8d850be24c2b data\minecraft\tags\block\crops.json
+// 1.21	2026-05-04T22:50:09.640957	Super Cool Mod/Tags for minecraft:block
+33ea28982731182f54fbf2e0412b8d850be24c2b data/minecraft/tags/block/crops.json
+cb0e20f46ed1565a863e0a158e150eab2477f5ab data/minecraft/tags/block/mineable/pickaxe.json

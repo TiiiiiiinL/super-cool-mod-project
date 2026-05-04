@@ -1,7 +1,5 @@
-
-// 1.21	2026-05-01T14:35:33.7908	Super Cool Mod/Block Loot Tables
-9d1a6f9deadbfa450098c6c206e96d6884a7c10f data\super-cool-mod\loot_table\blocks\jade_ore_block.json
-7b4e04afc0084520247310fa5e62924a9491a1cd data\super-cool-mod\loot_table\blocks\jade_block.json
-83ba564347c9e6cde2adb280e10b79b9d71a0b4a data\super-cool-mod\loot_table\blocks\rice_crop.json
-
-
+// 1.21	2026-05-04T22:50:09.641458	Super Cool Mod/Block Loot Tables
+7b4e04afc0084520247310fa5e62924a9491a1cd data/super-cool-mod/loot_table/blocks/jade_block.json
+9d1a6f9deadbfa450098c6c206e96d6884a7c10f data/super-cool-mod/loot_table/blocks/jade_ore_block.json
+a3ce613a84ccdc8faf614b3c4453eb310750f823 data/super-cool-mod/loot_table/blocks/tomato_bush.json
+83ba564347c9e6cde2adb280e10b79b9d71a0b4a data/super-cool-mod/loot_table/blocks/rice_crop.json
