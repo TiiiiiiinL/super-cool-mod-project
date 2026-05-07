@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_rice": {
+    "has_noodles": {
       "conditions": {
         "items": [
           {
-            "items": "super-cool-mod:raw_rice"
+            "items": "super-cool-mod:noodles"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cooked_rice_from_smoking"
+        "recipe": "super-cool-mod:ramen"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_raw_rice"
+      "has_noodles"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cooked_rice_from_smoking"
+      "super-cool-mod:ramen"
     ]
   }
 }

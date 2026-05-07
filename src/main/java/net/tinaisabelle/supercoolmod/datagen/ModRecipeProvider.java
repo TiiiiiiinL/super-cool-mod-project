@@ -14,13 +14,6 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.item.ModItems;
-<<<<<<< HEAD
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.item.Items;
-=======
->>>>>>> da18cbebc93358dd32b7baa409ab044d29d5cb4c
-
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -49,22 +42,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BAOZI)
+                .pattern("WWW")
+                .pattern("WPW")
+                .pattern("WWW")
+                .input('W', Items.WHEAT)
+                .input('P', Items.PORKCHOP)
+                .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP))
+                .offerTo(exporter);
+
+
+
+
+
         List<ItemConvertible> JADE_SMELTABLES = List.of(ModItems.RAW_JADE_ORE, ModBlocks.JADE_ORE_BLOCK);
 
         offerSmelting(exporter, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE_ORE,0.25f, 200, "jade");
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.JADE_ORE, RecipeCategory.DECORATIONS, ModBlocks.JADE_BLOCK);
 
-        /*
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.JADE_BLOCK)
-                .pattern("JJJ")
-                .pattern("JJJ")
-                .pattern("JJJ")
-                .input('J', ModItems.JADE_ORE)
-                .criterion(hasItem(ModItems.JADE_ORE), conditionsFromItem(ModItems.JADE_ORE))
-                .offerTo(exporter);
 
-
-         */
 
 
 
