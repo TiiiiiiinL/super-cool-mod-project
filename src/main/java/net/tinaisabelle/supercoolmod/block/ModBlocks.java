@@ -14,6 +14,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
+import net.tinaisabelle.supercoolmod.block.custom.CucumberCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TeaLeavesCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
@@ -42,6 +43,10 @@ public class ModBlocks {
 
     public static final Block TEA_LEAVES_CROP = registerBlockWithOutBlockItem("tea_leaves_crop",
             new TeaLeavesCropBlock(AbstractBlock.Settings.create().noCollision().
+                    ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block CUCUMBER_CROP = registerBlockWithOutBlockItem("cucumber_crop",
+            new CucumberCropBlock(AbstractBlock.Settings.create().noCollision().
                     ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
 

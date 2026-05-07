@@ -26,6 +26,8 @@ public class SuperCoolMod implements ModInitializer {
         CompostingChanceRegistry.INSTANCE.add(ModItems.CILANTRO,0.25f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.TEA_LEAVES,0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.TEA_LEAVES_SEEDS,0.25f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.CUCUMBER,0.5f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.CUCUMBER_SEEDS,0.25f);
 
     }
 }

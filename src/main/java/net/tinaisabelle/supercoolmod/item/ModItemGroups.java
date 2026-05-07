@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_JADE_ORE);
                         entries.add(ModBlocks.JADE_BLOCK);
                         entries.add(ModBlocks.JADE_ORE_BLOCK);
+                        entries.add(ModItems.CUCUMBER_SEEDS);
                     }).build());
 
 

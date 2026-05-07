@@ -18,6 +18,7 @@ import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
+import net.tinaisabelle.supercoolmod.block.custom.CucumberCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TeaLeavesCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
@@ -45,9 +46,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
         this.addDrop(ModBlocks.RICE_CROP, this.cropDrops(ModBlocks.RICE_CROP, ModItems.RAW_RICE, ModItems.RICE_SEEDS, builder2));
         */
 
-        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.TEA_LEAVES_CROP)
-                .properties(StatePredicate.Builder.create().exactMatch(RiceCropBlock.AGE, TeaLeavesCropBlock.MAX_AGE));
-        this.addDrop(ModBlocks.TEA_LEAVES_CROP, this.cropDrops(ModBlocks.TEA_LEAVES_CROP, ModItems.TEA_LEAVES, ModItems.TEA_LEAVES_SEEDS, builder2));
+        BlockStatePropertyLootCondition.Builder tea_leaves_builder = BlockStatePropertyLootCondition.builder(ModBlocks.TEA_LEAVES_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(TeaLeavesCropBlock.AGE, TeaLeavesCropBlock.MAX_AGE));
+        this.addDrop(ModBlocks.TEA_LEAVES_CROP, this.cropDrops(ModBlocks.TEA_LEAVES_CROP, ModItems.TEA_LEAVES, ModItems.TEA_LEAVES_SEEDS, tea_leaves_builder));
+
+        BlockStatePropertyLootCondition.Builder cucumber_builder = BlockStatePropertyLootCondition.builder(ModBlocks.CUCUMBER_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CucumberCropBlock.AGE, CucumberCropBlock.MAX_AGE));
+        this.addDrop(ModBlocks.CUCUMBER_CROP, this.cropDrops(ModBlocks.CUCUMBER_CROP, ModItems.CUCUMBER, ModItems.CUCUMBER_SEEDS, cucumber_builder));
 
         this.addDrop(ModBlocks.RICE_CROP, LootTable.builder()
         //full med

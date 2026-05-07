@@ -46,6 +46,9 @@ public class ModItems {
     public static final Item TEA_LEAVES_SEEDS = registerItem("tea_leaves_seeds",
             new AliasedBlockItem(ModBlocks.TEA_LEAVES_CROP, new Item.Settings()));
 
+    public static final Item CUCUMBER_SEEDS = registerItem("cucumber_seeds",
+            new AliasedBlockItem(ModBlocks.CUCUMBER_CROP, new Item.Settings()));
+
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(new Item.Settings().maxDamage(32))); //maxdamage==gånger kan användas
 
