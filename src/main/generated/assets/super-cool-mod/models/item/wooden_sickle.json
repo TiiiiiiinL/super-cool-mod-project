@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "super-cool-mod:item/cilantro"
+    "layer0": "super-cool-mod:item/wooden_sickle"
   }
 }
