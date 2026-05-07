@@ -3,6 +3,7 @@ package net.tinaisabelle.supercoolmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
+import net.tinaisabelle.supercoolmod.block.custom.TeaLeavesCropBlock;
 import net.tinaisabelle.supercoolmod.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -26,6 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.TOMATO_BUSH,BlockStateModelGenerator.TintType.NOT_TINTED,
                 TomatoBushBlock.AGE, 0, 1, 2, 3);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.TEA_LEAVES_CROP, TeaLeavesCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
 

@@ -24,5 +24,8 @@
   "item.super-cool-mod.wooden_sickle": "Wooden Sickle",
 
   "block.super-cool-mod.rice_crop": "Rice Crop",
-  "block.super-cool-mod.tomato_bush": "Tomato Bush"
+  "block.super-cool-mod.tomato_bush": "Tomato Bush",
+
+  "item.super-cool-mod.tea_leaves_seeds": "Tea Leaves Seeds",
+  "item.super-cool-mod.tea_leaves_crop": "Tea Leaves Crop"
 }

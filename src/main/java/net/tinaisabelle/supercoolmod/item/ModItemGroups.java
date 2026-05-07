@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
+import net.tinaisabelle.supercoolmod.block.ModBlocks;
 
 public class ModItemGroups {
 
@@ -19,7 +20,16 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.super-cool-mod.new_mod_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RAMEN);
-
+                        entries.add(ModItems.BAOZI);
+                        entries.add(ModItems.MAKI_ROLL);
+                        entries.add(ModItems.TEA_LEAVES);
+                        entries.add(ModItems.TEA_LEAVES_SEEDS);
+                        entries.add(ModItems.CUCUMBER);
+                        entries.add(ModItems.MATCHA);
+                        entries.add(ModItems.JADE_ORE);
+                        entries.add(ModItems.RAW_JADE_ORE);
+                        entries.add(ModBlocks.JADE_BLOCK);
+                        entries.add(ModBlocks.JADE_ORE_BLOCK);
                     }).build());
 
 

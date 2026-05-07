@@ -19,6 +19,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
+import net.tinaisabelle.supercoolmod.block.custom.TeaLeavesCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
 import net.tinaisabelle.supercoolmod.item.ModItems;
 
@@ -43,6 +44,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
                 .properties(StatePredicate.Builder.create().exactMatch(RiceCropBlock.AGE,RiceCropBlock.MAX_AGE));
         this.addDrop(ModBlocks.RICE_CROP, this.cropDrops(ModBlocks.RICE_CROP, ModItems.RAW_RICE, ModItems.RICE_SEEDS, builder2));
         */
+
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.TEA_LEAVES_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(RiceCropBlock.AGE, TeaLeavesCropBlock.MAX_AGE));
+        this.addDrop(ModBlocks.TEA_LEAVES_CROP, this.cropDrops(ModBlocks.TEA_LEAVES_CROP, ModItems.TEA_LEAVES, ModItems.TEA_LEAVES_SEEDS, builder2));
 
         this.addDrop(ModBlocks.RICE_CROP, LootTable.builder()
         //full med
