@@ -22,6 +22,5 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
 
         getOrCreateTagBuilder(BlockTags.CROPS)
                 .add(ModBlocks.RICE_CROP);
-                
     }
 }

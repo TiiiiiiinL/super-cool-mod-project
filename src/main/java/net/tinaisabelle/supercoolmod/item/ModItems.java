@@ -13,8 +13,6 @@ import net.tinaisabelle.supercoolmod.item.custom.SickleItem;
 
 public class ModItems {
 
-    //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
-    
     public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
 
 
