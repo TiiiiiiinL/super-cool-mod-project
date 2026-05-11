@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "super-cool-mod:wooden_sickle"
+        "recipe": "super-cool-mod:netherite_sickle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "super-cool-mod:wooden_sickle"
+      "super-cool-mod:netherite_sickle"
     ]
   }
 }
