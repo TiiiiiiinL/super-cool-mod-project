@@ -20,6 +20,8 @@ public class ModTags {
         public static final TagKey<Item> GOLDEN_TOOL_MATERIALS = createTag("golden_tool_materials");
         public static final TagKey<Item> DIAMOND_TOOL_MATERIALS = createTag("diamond_tool_materials");
         public static final TagKey<Item> NETHERITE_TOOL_MATERIALS = createTag("netherite_tool_materials");
+        public static final TagKey<Item> SICKLE = createTag("sickle");
+
 
 
 

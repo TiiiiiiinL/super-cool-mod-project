@@ -35,6 +35,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.NETHERITE_TOOL_MATERIALS)
                 .add(Items.NETHERITE_INGOT);
 
+        getOrCreateTagBuilder(ModTags.Items.SICKLE)
+                .add(ModItems.WOODEN_SICKLE)
+                .add(ModItems.STONE_SICKLE)
+                .add(ModItems.COPPER_SICKLE)
+                .add(ModItems.IRON_SICKLE)
+                .add(ModItems.GOLDEN_SICKLE)
+                .add(ModItems.DIAMOND_SICKLE)
+                .add(ModItems.NETHERITE_SICKLE);
+
     }
 
 
