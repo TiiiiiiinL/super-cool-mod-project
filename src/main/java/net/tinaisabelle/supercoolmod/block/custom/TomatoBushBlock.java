@@ -24,7 +24,7 @@ public class TomatoBushBlock extends SweetBerryBushBlock {
 
     @Override
     public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.TOMATO);
+        return new ItemStack(ModItems.TOMATO_SEEDS);
     }
 
     @Override

@@ -20,13 +20,15 @@ public class SuperCoolMod implements ModInitializer {
 		ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModWorldGeneration.generateModWorldGen();
+        registerComposting();
+    }
 
-
-        //komposting grejer
+    public static void registerComposting() {
+        //CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO_SEEDS, 0.25f);
+        //CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO, 0.05f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.RAW_RICE,0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.RICE_SEEDS,0.25f);
-        CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO,0.25f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.CILANTRO,0.25f);
-
     }
 }
+
