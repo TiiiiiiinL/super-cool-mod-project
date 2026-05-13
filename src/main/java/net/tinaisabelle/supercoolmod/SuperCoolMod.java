@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.item.ModItemGroups;
 import net.tinaisabelle.supercoolmod.item.ModItems;
+import net.tinaisabelle.supercoolmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +19,8 @@ public class SuperCoolMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModWorldGeneration.generateModWorldGen();
+
 
         //komposting grejer
         CompostingChanceRegistry.INSTANCE.add(ModItems.RAW_RICE,0.5f);

@@ -1,16 +1,25 @@
-
-// 1.21	2026-05-03T04:54:49.383774	Super Cool Mod/Recipes
-da4a7e6385bb19e8aaae9b92884103eeab5f2e91 data\super-cool-mod\recipe\cooked_rice.json
-8d88989c6cb3602280cea75be82efe19362c3477 data\super-cool-mod\advancement\recipes\food\cooked_rice.json
-be7a1db4501c2026b6426b0f4032bb4800705b75 data\super-cool-mod\advancement\recipes\tools\wooden_sickle.json
-c905708ca17eb66e4e004afdb117efbb2f056792 data\super-cool-mod\recipe\wooden_sickle.json
-// 1.21	2026-05-01T14:35:33.7898033	Super Cool Mod/Recipes
-8d998c17453c5f49da74f39221f3215fa7f9e2eb data\super-cool-mod\advancement\recipes\misc\jade_ore_from_smelting_jade_ore_block.json
-9df8b71e7c8cfb93ca0fdfbc916dc659b6c69f4b data\super-cool-mod\advancement\recipes\building_blocks\jade_ore.json
+// 1.21	2026-05-12T22:27:02.8861705	Super Cool Mod/Recipes
+87d2b138b10d23b503d20c947b2ebc7e6b606f5b data\super-cool-mod\advancement\recipes\tools\netherite_sickle.json
 e57d98a2d996ce2966d834100eb44c65443bef14 data\super-cool-mod\recipe\jade_ore.json
-1b1df01bebff3970ecf6f2d5a1f0c8d6f7d100a8 data\super-cool-mod\advancement\recipes\decorations\jade_block.json
-3e44245f984155f68a5f6644b0e22ac6d605178f data\super-cool-mod\recipe\jade_ore_from_smelting_raw_jade_ore.json
 9ad80adcc563f2c78d6283a919a1ed86d8996f86 data\super-cool-mod\recipe\jade_block.json
+8d88989c6cb3602280cea75be82efe19362c3477 data\super-cool-mod\advancement\recipes\food\cooked_rice.json
+1b1df01bebff3970ecf6f2d5a1f0c8d6f7d100a8 data\super-cool-mod\advancement\recipes\decorations\jade_block.json
+da4a7e6385bb19e8aaae9b92884103eeab5f2e91 data\super-cool-mod\recipe\cooked_rice.json
+cc7853ecae0edc08208a8ef2525b5885cdcef8cf data\super-cool-mod\recipe\netherite_sickle.json
+bcf2b8f4f51dd3085e0cb07b2d4180634fc48ef8 data\super-cool-mod\advancement\recipes\tools\golden_sickle.json
+625861f186ccd7d184d84988f953b3cb714cc062 data\super-cool-mod\recipe\iron_sickle.json
+37b544e53e8cda946c92e54bf1f6cfdf9395720d data\super-cool-mod\advancement\recipes\tools\iron_sickle.json
+d266a56525a101229738cc20ebcde05bc7f64afd data\super-cool-mod\recipe\stone_sickle.json
 e46e851fa82fd38dc900a5b27c54fc16fd4d61d7 data\super-cool-mod\advancement\recipes\misc\jade_ore_from_smelting_raw_jade_ore.json
+bef915246a01e47bf1cf9de58cc4bfc4392d63fe data\super-cool-mod\recipe\golden_sickle.json
+8d998c17453c5f49da74f39221f3215fa7f9e2eb data\super-cool-mod\advancement\recipes\misc\jade_ore_from_smelting_jade_ore_block.json
+3e44245f984155f68a5f6644b0e22ac6d605178f data\super-cool-mod\recipe\jade_ore_from_smelting_raw_jade_ore.json
+9df8b71e7c8cfb93ca0fdfbc916dc659b6c69f4b data\super-cool-mod\advancement\recipes\building_blocks\jade_ore.json
+f2ae37d544b48bf36c98181434fbf99d561f1408 data\super-cool-mod\advancement\recipes\tools\diamond_sickle.json
 aeabdccaeeda95b5f001b903719c1df9896dd0bc data\super-cool-mod\recipe\jade_ore_from_smelting_jade_ore_block.json
-
+4b1c4f9111ccaddc432c69dde001ebb3cb35b9ce data\super-cool-mod\advancement\recipes\tools\stone_sickle.json
+8bb4cbff0d6459b143b6a958942ee2e18cedbd06 data\super-cool-mod\recipe\diamond_sickle.json
+014f04e17d153646925ed5e8e8d93881893dd74b data\super-cool-mod\recipe\copper_sickle.json
+d959aa50fc9dedf933e714aac60125f304b56232 data\super-cool-mod\advancement\recipes\tools\wooden_sickle.json
+ebc346e2c2a255b4f1572e2b6b51ec18e1426ade data\super-cool-mod\advancement\recipes\tools\copper_sickle.json
+c905708ca17eb66e4e004afdb117efbb2f056792 data\super-cool-mod\recipe\wooden_sickle.json

@@ -21,6 +21,7 @@ import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.block.custom.RiceCropBlock;
 import net.tinaisabelle.supercoolmod.block.custom.TomatoBushBlock;
 import net.tinaisabelle.supercoolmod.item.ModItems;
+import net.tinaisabelle.supercoolmod.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -51,12 +52,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
                 .properties(StatePredicate.Builder.create()
                     .exactMatch(RiceCropBlock.AGE, RiceCropBlock.MAX_AGE)))
             .conditionally(MatchToolLootCondition.builder(
-                ItemPredicate.Builder.create().items(ModItems.WOODEN_SICKLE)))//göra mod tag så den funkar för alla sickle
+                ItemPredicate.Builder.create().tag(ModTags.Items.SICKLE)))//göra mod tag så den funkar för alla sickle
             .with(ItemEntry.builder(ModItems.RAW_RICE))
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(4.0F, 6.0F)))
         )
-
         // full utan sickle
         .pool(LootPool.builder()
             .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
@@ -64,14 +64,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
                     .exactMatch(RiceCropBlock.AGE, RiceCropBlock.MAX_AGE)))
                 .conditionally(InvertedLootCondition.builder(
                         MatchToolLootCondition.builder(
-                                ItemPredicate.Builder.create().items(ModItems.WOODEN_SICKLE)
+                                ItemPredicate.Builder.create().tag(ModTags.Items.SICKLE)
                         )
                 ).build())
             .with(ItemEntry.builder(ModItems.RAW_RICE))
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(1.0F, 3.0F)))
         )
-
         //seeds alltid droppa
         .pool(LootPool.builder()
             .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
@@ -81,7 +80,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
             .apply(SetCountLootFunction.builder(
                 UniformLootNumberProvider.create(1.0F, 2.0F)))
         )
-
         // inte full
         .pool(LootPool.builder()
             .conditionally(InvertedLootCondition.builder(

@@ -14,7 +14,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "super-cool-mod:wooden_sickle"
+            "items": "#super-cool-mod:sickle"
           }
         }
       ],
@@ -52,7 +52,7 @@
           "term": {
             "condition": "minecraft:match_tool",
             "predicate": {
-              "items": "super-cool-mod:wooden_sickle"
+              "items": "#super-cool-mod:sickle"
             }
           }
         }

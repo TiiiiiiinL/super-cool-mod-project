@@ -3,6 +3,7 @@ package net.tinaisabelle.supercoolmod.block.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -41,5 +42,9 @@ public class TomatoBushBlock extends SweetBerryBushBlock {
         } else {
             return super.onUse(state, world, pos, player, hit);
         }
+    }
+
+    @Override
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
     }
 }

@@ -2,11 +2,15 @@ package net.tinaisabelle.supercoolmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 import net.tinaisabelle.supercoolmod.datagen.*;
 import net.tinaisabelle.supercoolmod.datagen.ModBlockTagProvider;
 import net.tinaisabelle.supercoolmod.datagen.ModItemTagProvider;
 import net.tinaisabelle.supercoolmod.datagen.ModLootTableProvider;
 import net.tinaisabelle.supercoolmod.datagen.ModModelProvider;
+import net.tinaisabelle.supercoolmod.world.ModConfiguredFeatures;
+import net.tinaisabelle.supercoolmod.world.ModPlacedFeatures;
 
 public class SuperCoolModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -17,5 +21,15 @@ public class SuperCoolModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModRegistryDataGenerator::new);
 	}
+
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+
+    }
 }
+

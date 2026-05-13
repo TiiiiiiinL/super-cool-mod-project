@@ -13,8 +13,6 @@ import net.tinaisabelle.supercoolmod.item.custom.SickleItem;
 
 public class ModItems {
 
-    //man lowkey ska lägga de som e food på en annan, för den e inte bara items o så men det är iaf test grej, ändrar mer sen när jag kommer dit
-    
     public static final Item TEA_LEAVES = registerItem("tea_leaves", new Item(new Item.Settings()));
 
 
@@ -45,7 +43,7 @@ public class ModItems {
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(new Item.Settings().maxDamage(32))); //maxdamage==gånger kan användas
 
-    /*
+
     public static final Item STONE_SICKLE = registerItem("stone_sickle",
             new SickleItem(new Item.Settings().maxDamage(65)));
 
@@ -63,7 +61,7 @@ public class ModItems {
 
     public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
             new SickleItem(new Item.Settings().maxDamage(2100)));
-    */
+
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -101,6 +99,12 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(WOODEN_SICKLE);
+            fabricItemGroupEntries.add(STONE_SICKLE);
+            fabricItemGroupEntries.add(COPPER_SICKLE);
+            fabricItemGroupEntries.add(IRON_SICKLE);
+            fabricItemGroupEntries.add(GOLDEN_SICKLE);
+            fabricItemGroupEntries.add(DIAMOND_SICKLE);
+            fabricItemGroupEntries.add(NETHERITE_SICKLE);
         });
     }
 }
