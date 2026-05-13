@@ -1,4 +1,9 @@
 # Super Cool Mod
+Super Cool Mod är som namnet ett supercoolt minecraft mod som fokusera på att öka varianter på grödor, vi har lagt till en hel del nya växter som ris, tomater, gurka...Samt nya rätter som man kan crafta. :)
+
+## DEMO
+Lägg upp en demo video här.
+
 
 ## Planning
 Tanke med denna mod är att den ska läga till olika crops och man ska kunna göra nya recept med det
