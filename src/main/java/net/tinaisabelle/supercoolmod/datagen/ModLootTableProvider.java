@@ -94,7 +94,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
 
 
 
-
         this.addDrop(ModBlocks.TOMATO_BUSH,
                 block -> this.applyExplosionDecay(
                         block, LootTable.builder()
@@ -105,12 +104,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
                         .with(ItemEntry.builder(ModItems.TOMATO))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 3.0F)))
                         .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
-                ) //inte full
+                        )
+                .pool(LootPool.builder()
+                        .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_BUSH)
+                                .properties(StatePredicate.Builder.create()
+                                        .exactMatch(TomatoBushBlock.AGE, 3)))
+                        .with(ItemEntry.builder(ModItems.TOMATO_SEEDS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0F, 1.0F)))
+                        .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
+                        ) //inte full
                 .pool(LootPool.builder()
                         .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_BUSH)
                                 .properties(StatePredicate.Builder.create().exactMatch(TomatoBushBlock.AGE, 2)))
-                        .with(ItemEntry.builder(ModItems.TOMATO))
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
+                        .with(ItemEntry.builder(ModItems.TOMATO_SEEDS))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0F, 1.0F)))
                                 .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))))));
 
 

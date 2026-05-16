@@ -43,9 +43,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COOKED_RICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_RICE, Models.GENERATED);
 
-        //itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED); ig man inte behöver den för tomat bush redan registrerade den en gång?
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.CILANTRO, Models.GENERATED); //det ska också vara en buske
         itemModelGenerator.register(ModItems.WOODEN_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_SICKLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_SICKLE, Models.GENERATED);
+
 
     }
 

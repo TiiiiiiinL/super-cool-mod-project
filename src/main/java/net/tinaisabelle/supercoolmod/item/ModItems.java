@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.tinaisabelle.supercoolmod.SuperCoolMod;
 import net.tinaisabelle.supercoolmod.block.ModBlocks;
 import net.tinaisabelle.supercoolmod.item.custom.SickleItem;
+import net.tinaisabelle.supercoolmod.item.custom.TomatoItem;
 
 public class ModItems {
 
@@ -34,15 +35,14 @@ public class ModItems {
     public static final Item CILANTRO = registerItem("cilantro",
             new Item(new Item.Settings().food(ModFoodComponents.CILANTRO)));
 
-    public static final Item TOMATO = registerItem("tomato",
-            new AliasedBlockItem(ModBlocks.TOMATO_BUSH, new Item.Settings().food(ModFoodComponents.TOMATO)));
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_BUSH, new Item.Settings()));
 
     public static final Item RICE_SEEDS = registerItem("rice_seeds",
             new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
 
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(new Item.Settings().maxDamage(32))); //maxdamage==gånger kan användas
-
 
     public static final Item STONE_SICKLE = registerItem("stone_sickle",
             new SickleItem(new Item.Settings().maxDamage(65)));
@@ -62,6 +62,8 @@ public class ModItems {
     public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
             new SickleItem(new Item.Settings().maxDamage(2100)));
 
+    public static final Item TOMATO = registerItem("tomato",
+            new TomatoItem(new Item.Settings().food(ModFoodComponents.TOMATO)));
 
     /** det här e en helper metod för att registrera items
      * @param name på item
@@ -95,6 +97,7 @@ public class ModItems {
             fabricItemGroupEntries.add(RAW_RICE);
             fabricItemGroupEntries.add(RICE_SEEDS);
             fabricItemGroupEntries.add(CILANTRO);
+            fabricItemGroupEntries.add(TOMATO_SEEDS);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {

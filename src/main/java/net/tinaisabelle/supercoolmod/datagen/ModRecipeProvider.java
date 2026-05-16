@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -42,11 +43,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createSickleRecipe(exporter, ModItems.DIAMOND_SICKLE, ModTags.Items.DIAMOND_TOOL_MATERIALS);
         createSickleRecipe(exporter, ModItems.NETHERITE_SICKLE, ModTags.Items.NETHERITE_TOOL_MATERIALS);
 
-
         List<ItemConvertible> JADE_SMELTABLES = List.of(ModItems.RAW_JADE_ORE, ModBlocks.JADE_ORE_BLOCK);
 
         offerSmelting(exporter, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE_ORE,0.25f, 200, "jade");
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.JADE_ORE, RecipeCategory.DECORATIONS, ModBlocks.JADE_BLOCK);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOMATO_SEEDS, 1)
+                .input(ModItems.TOMATO)
+                .criterion(hasItem(ModItems.TOMATO), conditionsFromItem(ModItems.TOMATO))
+                .offerTo(exporter);
 
         /*
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.JADE_BLOCK)
@@ -78,6 +83,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter);
     }
+
 
     /*
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WOODEN_SICKLE) //ändra till alla material
